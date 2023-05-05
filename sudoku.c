@@ -49,12 +49,31 @@ int is_valid(Node* n){
 }
 
 
+/*funcion propia
+void busqueda(Node * nodo)
+{
+  for(int i = 0; i<9; i++)
+    {
+      for(int k = 0; k<9; k++)
+        {
+          if(nodo->sudo[i][j]== 0)
+          {
+            
+            return ;
+          }
+        }
+    }
+}*/
+
+
+
 List* get_adj_nodes(Node* n){
     List* list=createList();
     for(int i = 0; i<=9;i++)
       {
         Node *aux =createNode();
         aux = copy(n);
+        //busqueda(aux);
         pushBack(list, aux);
       }
     return list;
