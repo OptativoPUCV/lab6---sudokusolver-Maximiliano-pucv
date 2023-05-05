@@ -56,7 +56,7 @@ void busqueda(Node * nodo)
     {
       for(int k = 0; k<9; k++)
         {
-          if(nodo->sudo[i][j]== 0)
+          if(nodo->sudo[i][k]== 0)
           {
             
             return ;
