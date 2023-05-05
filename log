@@ -1,0 +1,11 @@
+Fri 05 May 2023 12:38:36 PM UTC: 
+ sudoku.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:56:15: error: variable ‘aux’ set but not used [-Werror=unused-but-set-variable]
+   56 |         Node *aux =createNode();
+      |               ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+c3f516d
