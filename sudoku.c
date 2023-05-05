@@ -50,7 +50,7 @@ int is_valid(Node* n){
 
 
 //*funcion propia
-void busqueda(Node * nodo,int num)
+void busqueda(Node * nodo,int num,List * lista)
 {
   for(int i = 0; i<9; i++)
     {
@@ -60,6 +60,11 @@ void busqueda(Node * nodo,int num)
           {
             nodo->sudo[i][k]=num;
             return ;
+          }
+          else
+          {
+            clean(lista);
+            return;
           }
         }
     }
@@ -73,7 +78,7 @@ List* get_adj_nodes(Node* n){
       {
         Node *aux =createNode();
         aux = copy(n);
-        busqueda(aux,i);
+        busqueda(aux,i,list);
         pushBack(list, aux);
       }
     return list;
