@@ -69,7 +69,7 @@ void busqueda(Node * nodo)
 
 List* get_adj_nodes(Node* n){
     List* list=createList();
-    for(int i = 0; i<=9;i++)
+    for(int i = 1; i<=9;i++)
       {
         Node *aux =createNode();
         aux = copy(n);
