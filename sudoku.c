@@ -61,11 +61,6 @@ void busqueda(Node * nodo,int num,List * lista)
             nodo->sudo[i][k]=num;
             return ;
           }
-          else
-          {
-            clean(lista);
-            return;
-          }
         }
     }
 }
