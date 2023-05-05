@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "list.h"
-
+#include <stdbool.h>
 
 typedef struct{
    int sudo[9][9];
@@ -50,7 +50,7 @@ int is_valid(Node* n){
 
 
 //*funcion propia
-void busqueda(Node * nodo,int num,List * lista)
+bool busqueda(Node * nodo,int num)
 {
   for(int i = 0; i<9; i++)
     {
@@ -59,10 +59,11 @@ void busqueda(Node * nodo,int num,List * lista)
           if(nodo->sudo[i][k]== 0)
           {
             nodo->sudo[i][k]=num;
-            return ;
+            return true ;
           }
         }
     }
+  return false;
 }
 
 
@@ -73,7 +74,10 @@ List* get_adj_nodes(Node* n){
       {
         Node *aux =createNode();
         aux = copy(n);
-        busqueda(aux,i,list);
+        if(busqueda(aux,i) == false)
+        {
+          break;
+        }
         pushBack(list, aux);
       }
     return list;
