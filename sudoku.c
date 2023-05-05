@@ -55,6 +55,7 @@ List* get_adj_nodes(Node* n){
       {
         Node *aux =createNode();
         aux = copy(n);
+        pushBack(list, aux);
       }
     return list;
 }
