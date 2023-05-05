@@ -49,7 +49,7 @@ int is_valid(Node* n){
 }
 
 
-/*funcion propia
+//*funcion propia
 void busqueda(Node * nodo)
 {
   for(int i = 0; i<9; i++)
@@ -63,7 +63,7 @@ void busqueda(Node * nodo)
           }
         }
     }
-}*/
+}
 
 
 
@@ -73,7 +73,7 @@ List* get_adj_nodes(Node* n){
       {
         Node *aux =createNode();
         aux = copy(n);
-        //busqueda(aux);
+        busqueda(aux);
         pushBack(list, aux);
       }
     return list;

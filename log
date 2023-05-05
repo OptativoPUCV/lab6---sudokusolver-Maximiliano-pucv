@@ -21,3 +21,14 @@ Fri 05 May 2023 12:56:03 PM UTC:
  tests:  0|5
 total_score: 0/70
 9516bc5
+Fri 05 May 2023 01:00:42 PM UTC: 
+ sudoku.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘busqueda’:
+sudoku.c:59:28: error: ‘j’ undeclared (first use in this function)
+   59 |           if(nodo->sudo[i][j]== 0)
+      |                            ^
+sudoku.c:59:28: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+92cef96
