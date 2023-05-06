@@ -44,15 +44,14 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  Node * aux = n;
-  int j [10];
+  /*int j [10];
   for(int i = 0; i<9 ; i++)
   {
     for(int k = 0; k<9 ;k++)
       {
           
       }
-  }
+  }*/
   
   
     return 1;
