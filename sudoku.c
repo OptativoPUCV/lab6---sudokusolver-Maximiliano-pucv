@@ -44,25 +44,15 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
- /* Node * aux = n;
-  int j = 0;
-  while(j<9)
+  Node * aux = n;
+  int j [10];
+  for(int i = 0; i<9 ; i++)
   {
-    for(int i = 0; i<9 ; i++)
-    {
-      for(int k = 0; k<9 ;k++)
-        {
-          if(j != k)
-          {
-            if(n->sudo[i][k]==aux->sudo[i][j])
-            {
-              return 0;
-            }
-          }
-        }
-    }
-    j++;
-  }*/
+    for(int k = 0; k<9 ;k++)
+      {
+          
+      }
+  }
   
   
     return 1;
@@ -105,7 +95,15 @@ List* get_adj_nodes(Node* n){
 
 
 int is_final(Node* n){
-    return 0;
+    for(int i = 1; i<=9;i++)
+    {
+      if(busqueda(n,i) == false)
+      {
+        continue;
+      }
+      else return 0;
+    }
+    return 1;
 }
 
 Node* DFS(Node* initial, int* cont){
