@@ -46,15 +46,11 @@ void print_node(Node* n){
 int is_valid(Node* n){
   Node * aux = n;
   int j = 0;
-  while(true)
+  while(j<9)
   {
-    if(j>8)
+    for(int i = 0; i<9 ; i++)
     {
-      j = 0;
-    }
-    for(int i = 0; i<8 ; i++)
-    {
-      for(int k = 0; k<8 ;k++)
+      for(int k = 0; k<9 ;k++)
         {
           if(j != k)
           {
