@@ -44,7 +44,7 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  Node * aux = n;
+ /* Node * aux = n;
   int j = 0;
   while(j<9)
   {
@@ -62,7 +62,7 @@ int is_valid(Node* n){
         }
     }
     j++;
-  }
+  }*/
   
   
     return 1;
